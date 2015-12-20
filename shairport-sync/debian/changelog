@@ -1,3 +1,10 @@
+shairport-sync (2.6-0ubuntu4) wily; urgency=medium
+
+  * setup users for systemd service
+  * use dh_systemd to install service
+
+ -- dan <dantheperson@gmail.com>  Mon, 21 Dec 2015 10:22:21 +1300
+
 shairport-sync (2.6-0ubuntu3) trusty; urgency=low
 
   * correct bin path in init script

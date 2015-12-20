@@ -1,0 +1,23 @@
+sudo add-apt-repository ppa:dantheperson/shairplay-sync
+sudo apt-get update
+sudo apt-get install shairport-sync
+
+
+-- build new source package
+cd ~/git/packaging
+<unzip source pkg over existing debian tree>
+cd shariport-sync
+# quick build for local testing
+debuild -S -us -uc
+pbuilder-dist wily build ../shairport-sync_2.6-0ubuntu3.dsc 
+
+# Release build (signed)
+debuild -S -sa -k778D4FB7
+dput ppa:dantheperson/shairplay-sync ../shairport-sync_2.6-0ubuntu4_source.changes 
+
+
+
+#patches
+quilt new my_patch.diff
+quilt edit myfile.c
+quilt refresh

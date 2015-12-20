@@ -1,3 +1,21 @@
+shairport-sync (2.6-0ubuntu7) wily; urgency=low
+
+  * Add missing Build-Depends on systemd
+
+ -- dan carter <dantheperson@gmail.com>  Mon, 21 Dec 2015 12:07:11 +1300
+
+shairport-sync (2.6-0ubuntu6) wily; urgency=medium
+
+  * patch upstream to use correct systemd unit directory
+
+ -- dan carter <dantheperson@gmail.com>  Mon, 21 Dec 2015 12:02:57 +1300
+
+shairport-sync (2.6-0ubuntu5) wily; urgency=medium
+
+  * correct bin path in debain copy of systemd init script 
+
+ -- dan carter <dantheperson@gmail.com>  Mon, 21 Dec 2015 11:04:10 +1300
+
 shairport-sync (2.6-0ubuntu4) wily; urgency=medium
 
   * setup users for systemd service
